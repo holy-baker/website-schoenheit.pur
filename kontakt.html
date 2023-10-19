@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Sebastian Lieg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="desctiption" content="Kontakt aufnehmen mit schönheit.pur">
+        <meta name="keywords" content="Farbberatung, Stilberatung, Styling, Make-up, Kleiderschrank-Organisation, Personal-Shopping, Brautstyling, Eventstyling, Haarstyling, Wangen im Allgaeu">
+        <title>Kontakt aufnehmen</title>
+        <!-- icon soll noch geändert werden -->
+        <link rel="icon" href ="blume.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+        <header>
+            <h1>Kontakt aufnehmen</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                    <a href="/#ueber-mich">Über mich</a>
+                    </li>
+                    <li>
+                    <a href="/#leistungen">Meine Leistungen</a>
+                    </li>
+                    <li>
+                    <a href="/galerie.html">Galerie</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <figure>
+                <img src="img/phone.jpg" alt="Telefon" title="Rufen Sie an" width="1280" height="853">
+                <figcaption>
+                    Kontaktaufnahme
+                </figcaption>
+            </figure>
+        </header>
+        <hr>
+        <main>
+            <main>
+                <section>
+                    <h2>Kontaktformular</h2>
+        
+                    <form action="https://httpbin.org/get" method="get">
+                        <fieldset>
+                            <legend>nehmen Sie Kontakt auf</legend>
+                            <p>
+                                <label for="name">Name:</label>
+                                <input type="text" name="name" id="name" placeholder="dein Name" required>
+                            </p>
+                            <p>
+                                <label for="email">Email:</label>
+                                <input type="email" name="email" id="email" placeholder="deine email" required>
+                            </p>
+                            <p>
+                                <label for="message">deine Nachricht:</label>
+                                <br>
+                                <textarea name="message" id="message" cols="30" rows="10"
+                                    placeholder="schreibe hier deine Nachricht"></textarea>
+                            </p>
+                        </fieldset>
+                        <button type="submit">Senden</button>
+                        <button type="reset">Reset</button>
+                    </form>
+                </section>
+                <section>
+                    <h2>meine Anschrift</h2>
+                    <address>
+                       Bahnhofstraße 999<br>
+                        Wangen im Allgäu
+                        <br><br>
+                        Phone: <a href="tel:+5555555555">555-555-5555</a>
+                    </address>
+                </section>
+            </main>
+        </main>
+        <footer>
+            <p>Copyright &copy; schoenheit.pur</p>
+        </footer>
+        <hr>   
+    </body>
+
+</html>

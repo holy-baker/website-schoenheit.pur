@@ -1,56 +1,119 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Sebastian Lieg">
-    <!-- unter "desciption" sollen tags stehen, diese tags werden z.b. bei der Google-Suche abgefragt-->
-    <meta name="description" content="Farb-und Stilberatung von Sarah">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- korrekter Title?-->
-    <title>schönheit.pur</title>
-    <!-- korrektes icon ?-->
-    <link rel="icon" href ="blume.png" type="image/x-icon">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Sebastian Lieg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="desctiption" content="offizielle website von schoenheit.pur | Farb- und Stilberatung in Wangen im Allgäu und Umgebung">
+        <meta name="keywords" content="Farbberatung, Stilberatung, Styling, Make-up, Kleiderschrank-Organisation, Personal-Shopping, Brautstyling, Eventstyling, Haarstyling, Wangen im Allgaeu">
+        <title>schoenheit.pur | Farb- und Stilberatung</title>
+        <!-- icon soll noch geändert werden -->
+        <link rel="icon" href ="blume.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css">
+            <!-- Die Schriftart muss vor veröffentlich aus rechtlichen Gründen runtergeladen werden-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Righteous&display=swap" rel="stylesheet">
 
-    <!-- Die Schriftart muss vor veröffentlich aus rechtlichen Gründen runtergeladen werden-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Righteous&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css"> 
+    </head>
 
-    <link rel="stylesheet" href="main.css" type="text/css">
-</head>
-<body>
-    <h1>professionelle Farb- und Stilberatung</h1><!--ein Screenreader oder andere technologische Anwendungen lesen den code,
-        und können bei richtig angeordneter Semantik durch die Website navigieren. Deshalb ist es wichtig die headers richtig zu verwenden, da diese semantische bedeutung haben-->
-    <p>Schönheit, Visagistik, Mode und Stil mit und von Sarah Sonntag</p>
+    <body>
+        <header>
+            <h1> Willkommen bei schönheit.pur</h1>
+            <nav>
+                <ul>
+                    <li>
+                    <a href="#ueber-mich">Über mich  <!-- <abbr title="schönheit.pur mit Sarah Sonntag">S.PMSS</abbr>--></a>
+                    </li>
+                    <li>
+                    <a href="#leistungen">Meine Leistungen  <!-- <abbr title="schönheit.pur mit Sarah Sonntag">S.PMSS</abbr>--></a>
+                    </li>
+                    <li>
+                    <a href="galerie.html">Galerie  <!-- <abbr title="schönheit.pur mit Sarah Sonntag">S.PMSS</abbr>--></a>
+                    </li>
+                    <li>
+                    <a href="kontakt.html">Kontakt  <!-- <abbr title="schönheit.pur mit Sarah Sonntag">S.PMSS</abbr>--></a>
+                    </li>
+                </ul>
+            </nav>
 
-    <h2>Brautstyling</h2>
-    <br>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
-    <br>ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-    <br><em>schönheit</em><!-- semantische bedeutung: ein screenreader hebt dieses element hervor, bzw. liest es betont vor--> 
-    <br>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-    <br><strong>natürliche farben</strong><!--semantische bedeutung: ein screenreader hebt dieses element stark hervor, bzw. liest es laut vor--> 
-    <br>consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-    <br>diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
-    <br>sea takimata sanctus est Lorem ipsum dolor sit amet. 
-    <hr><!-- keine semantische bedeutung, nur zur besseren visualisierung-->
-    <h2>Eventstyling</h2>
-    <br>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
-    <br>ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-    <br>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
-    <br>consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, <!-- Zeile einrücken-->
-    <br>sea takimata sanctus est Lorem ipsum dolor sit amet.
-    <hr>
-    <h2>Farb- und Stilberatung</h2>
-    <br>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
-    <br>ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-    <br>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
-    <br>consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-    <br> diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
-    <br> sea takimata sanctus est Lorem ipsum dolor sit amet.
+            <figure>
+                <img src="img/makeup.jpg" alt="Make-up und Pinsel" title="Styling und Make-up" width="1280" height="756">
+                <figcaption>
+                    Make-up
+                </figcaption>
+            </figure>
+        </header>
+        <hr>
+        <main>
+            <article id="ueber-mich">
+                <!-- dem Text noch etwas Bedeutung geben. Beispiel: datetime, strong, ... -->
+                <h2>Über mich</h2>
+                <p>Schon während meiner pädagogischen Arbeit mit Kindern hat mir die Förderung und das <strong>kreative Arbeiten</strong></p>
+                <p><strong>und Gestalten</strong> sehr viel Freude bereitet. Nach erfolgreichem Abschluss absolvierte ich eine Lehre zur</p>
+                <p>Friseurin, um meine Leidenschaft zum Beruf zu machen. Diese war gefolgt von einer Weiterbildung zur</p>
+                <p>Master-of-Color bei Wella und Make-up Fachfrau und Farb- und Stilberaterin bei aesthetic+cosmetic.</p>
+                <p>Mit schönheit.pur starte ich nun meine Selbstständigkeit im wunderschönen Allgäu. Es erfüllt mich mit </p>
+                <p>Freude, meine Leidenschaft mit dem Beruf zu vereinen. Auch der Umgang mit Menschen ist für mich von</p>
+                <p>besonderer Bedeutung. Eine freundliche und offene Kommunikation, die eine vertrauensvolle und wohlige</p>
+                <p>Atmosphäre schafft, liegt mir sehr am Herzen. ❤️</p>
+            </article>
+            <hr>
+            <article id="leistungen">
+                <h2>Make-up & Farb- und Stilberatung</h2>
+                <table>
+                    <caption>meine Leistungen</caption>
+                    <thead>
+                        <tr>
+                            <th>Farb- und Stilberatung</th>
+                            <th scope="col"><abbr title="Stunden">Std</abbr></th>
+                            <th scope="col">Preise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" rowspan="3">
+                                Farbberatung
+                            </th>
+                            <td>2</td>
+                            <td>219 €</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>439 €</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>779 €</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" rowspan="1">
+                                Make-up Coaching
+                            </th>
+                            <td>1,5</td>
+                            <td>149 €</td>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="1">
+                                Zusatzbuchungen möglich Preis auf Anfrage
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <br>
+                <p>
+                    <a href="#">zurück nach oben</a>
+                </p>
+            </article>        
+        </main>
 
-    <hr>
-    &lt;&lt;&lt; &copy; schönheit.pur &gt;&gt;&gt;
-</body>
+        <footer>
+            <p>Copyright &copy; schoenheit.pur</p>
+        </footer>
+        <hr>   
+    </body>
+
 </html>
