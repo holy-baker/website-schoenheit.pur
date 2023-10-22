@@ -20,46 +20,54 @@
 
     <body>
         <header>
-            <div id="navbar" class="navbar">
+            <div class="navbar" id="myNavbar">
                 <nav>
                     <ul>
-                            <!-- <li><a href="#home"><img src="\img\LOGO-Leer-100x100.PNG"></a></li> -->
-                            <li><a href="kontakt.html">Kontakt</a></li>
+                            <li><a href="kontakt.html" class="active">Kontakt</a></li>
                             <li><a href="galerie.html">Galerie</a></li>
                             <li><a href="#leistungen">Leistungen</a></li>
                             <li><a href="#styling">Styling</a></li>
                             <li><a href="#beratung">Beratung</a></li>                   
                             <li><a href="#ueber-mich">Über mich</a></li>
-                            <!-- <li><a href="#ueber-mich">Über mich</a></li>
-                            <li><a href="#leistungen">Leistungen</a></li>
-                            <li><a href="galerie.html">Galerie</a></li>
-                            <li><a href="kontakt.html">Kontakt</a></li> -->
                     </ul>
                 </nav>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
+
+            <!-- von w3shools am 22.10.2023 -->
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("myNavbar");
+                  if (x.className === "navbar") {
+                    x.className += " responsive";
+                  } else {
+                    x.className = "navbar";
+                  }
+                }
+                </script>
+                
 
             <hr>
 
-            <article id="home">
-                <!-- <div class="logo_sp"> -->
-                    <figure>
-                        <img src="img/LOGO-1415x2000.PNG" class="logo_sp" title="schönheit-pur" width="303" height="500">
-                    </figure>
-                <!-- </div> -->
-                <br>
-                <br>
+            <div class="parallax">
+            
+
+                <article id="home">
+                    <div class="logo_sp">
+                        <center>
+                            <figure>
+                                <img src="img/logo.PNG" class="logo_sp" title="schönheit-pur" width="1040" height="1040" ali>
+                            </figure>
+                        </center>
+                    </div>
+            </div>
                 <h1> Willkommen bei schönheit.pur</h1>
                 <br>
-                <br>
-                <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Wenn wir den Mut haben,</p>
-                <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;unsere Einzigartigkeit zu umarmen,</p>
-                <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;strahlen wir eine ganz besondere Schönheit aus.</p>
-                <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Ob Hochzeit, Event oder Alltag- als mobile Stylistin und.</p>
-                <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Farb- und Stilberaterin biete ich individuelle Farb- </p>
-                <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;und Stilberatung, Brautstyling, Styling für besondere Anlässe, Fotoshootings</p> 
-                <p>oder den Alltag. Ich zeige dir, wie du deinen persönlichen Stil finden kannst und zaubere dir den Look, der dich</p>
-                <p>strahlen lässt. Meine Werte sind Natürlichkeit, Individualität, Stilbewusstsein und Wohlbefinden. Ich möchte dich</p>
-                <p> </p>
+                <p>Wenn wir den Mut haben, unsere Einzigartigkeit zu umarmen, strahlen wir eine ganz besondere Schönheit aus.</p>
+                <p>Ob Hochzeit, Event oder Alltag- als mobile Stylistin und Farb- und Stilberaterin biete ich individuelle Farb- 
+                <p>und Stilberatung, Brautstyling, Styling für besondere Anlässe, Fotoshootings oder den Alltag. Ich zeige dir,</p>
+                <p>wie du deinen persönlichen Stil finden kannst und zaubere dir den Look, der dich stahlen lässt</p>
+                <p>Meine Werte sind Natürlichkeit, Individualität, Stilbewusstsein und Wohlbefinden. Ich möchte dich</p>
                 <p>ermutigen, deine natürliche Schönheit zu unterstreichen und mit mehr Selbstbewusstsein hervorzuheben.</p>
                 <p>Lass uns gemeinsam deine schönsten Momente noch unvergesslicher gestalten oder deinen einzigartigen </p>
                 <p>Stil finden!</p>
@@ -281,7 +289,7 @@
         </main>
 
         <footer>
-            <p>Copyright &copy; schoenheit.pur</p>
+            <p>Copyright &copy; schönheit.pur</p>
         </footer>
         <hr>   
     </body>
