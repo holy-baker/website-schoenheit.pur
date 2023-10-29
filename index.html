@@ -20,8 +20,6 @@
     </head>
 
     <body>
-
-    
         <header>
             <div class="navbar" id="myNavbar">
                 <nav>
@@ -36,67 +34,32 @@
                 </nav>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
-            <!-- von w3shools am 22.10.2023 -->
-            <script>
-                function myFunction() {
-                  var x = document.getElementById("myNavbar");
-                  if (x.className === "navbar") {
-                    x.className += " responsive";
-                  } else {
-                    x.className = "navbar";
-                  }
-                }
-                </script>
-
             <hr>
-            
-            <script>
-                const elements = document.querySelectorAll('.parallax');
-                    
-                window.addEventListener('scroll', function () {
-                  let offset = window.pageYOffset;
-                
-                  elements.forEach((element) => {
-                    element.style.backgroundPositionY = `${offset * 0.8}px`;
-                  });
-                });       
-            </script>
-    
             <div class="parallax" id="parallax-1">  
                 <article id="home">
                     <div class="logo_sp">
                         <center>
                             <figure>
-                                <img src="img/Logo.png" alt="Logo" class="logo_sp" title="schönheit-pur" width="810" height="810">
+                                <img src="img/Logo_500x500.png" alt="Logo" class="logo_sp" title="schönheit-pur" width="500" height="500">
                             </figure>
                         </center>
                     </div>
-            
-                    <h1> Willkommen bei schönheit.pur</h1>
-                    <br>
-                    <p>Wenn wir den Mut haben, unsere Einzigartigkeit zu umarmen, strahlen wir eine ganz besondere Schönheit aus.</p>
-                    <p>Ob Hochzeit, Event oder Alltag- als mobile Stylistin und Farb- und Stilberaterin biete ich individuelle Farb- 
-                    <p>und Stilberatung, Brautstyling, Styling für besondere Anlässe, Fotoshootings oder den Alltag. Ich zeige dir,</p>
-                    <p>wie du deinen persönlichen Stil finden kannst und zaubere dir den Look, der dich stahlen lässt</p>
-                    <p>Meine Werte sind Natürlichkeit, Individualität, Stilbewusstsein und Wohlbefinden. Ich möchte dich</p>
-                    <p>ermutigen, deine natürliche Schönheit zu unterstreichen und mit mehr Selbstbewusstsein hervorzuheben.</p>
-                    <p>Lass uns gemeinsam deine schönsten Momente noch unvergesslicher gestalten oder deinen einzigartigen </p>
-                    <p>Stil finden!</p>
-                    <p>Ich freue mich darauf, dich kennen zu lernen!</p>
                 </article>
             </div>
-
-
+            <script src="js/main.js"></script>
+            <hr>
+            <h1> Willkommen bei Schönheit.Pur</h1>
+            <br>
+            <p>Wenn wir den Mut haben, unsere Einzigartigkeit zu umarmen, strahlen wir eine ganz besondere Schönheit aus.</p>
+            <p>Ob Hochzeit, Event oder Alltag- als mobile Stylistin und Farb- und Stilberaterin biete ich individuelle Farb- 
+            <p>und Stilberatung, Brautstyling, Styling für besondere Anlässe, Fotoshootings oder den Alltag. Ich zeige dir,</p>
+            <p>wie du deinen persönlichen Stil finden kannst und zaubere dir den Look, der dich stahlen lässt</p>
+            <p>Meine Werte sind Natürlichkeit, Individualität, Stilbewusstsein und Wohlbefinden. Ich möchte dich</p>
+            <p>ermutigen, deine natürliche Schönheit zu unterstreichen und mit mehr Selbstbewusstsein hervorzuheben.</p>
+            <p>Lass uns gemeinsam deine schönsten Momente noch unvergesslicher gestalten oder deinen einzigartigen </p>
+            <p>Stil finden!</p>
+            <p>Ich freue mich darauf, dich kennen zu lernen!</p>
         </header>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <hr>
         <main>
             <article id="ueber-mich">
                 <!-- dem Text noch etwas Bedeutung geben. Beispiel: datetime, strong, ... -->
@@ -162,149 +125,13 @@
 
             <hr>
 
-            <article id="leistungen">
-                <h2>meine Leistungen im Überblick</h2>
-                <table>
-                    <caption>
-                        Make-up & Farb- und Stilberatung
-                        <figure>
-                            <img src="img/1000x200.png" alt="Farberatung" title="Farbberatung" width="1000" height="200">
-                            <!-- <figcaption>Farbberatung</figcaption> -->
-                        </figure>
-                    </caption>
-
-                    <tbody>
-                        <tr>
-                            <th>Farbberatung</th>
-                            <th>Farb- und Stilberatung</th>
-                            <th>Farb- und Stilberatung +</th>
-                            <th>Make-up Coaching</th>
-                        </tr>
-                        <!--Farbberatung-->
-                        <tr>
-                            <!--Info über Farbberatung-->
-                            <td>
-                                ca. 2 Stunden
-                                <ul>
-                                    <li>Tagesmakeup</li>
-                                    <li>Frisurberatung</li>
-                                    <li>Beratungsmappe mit Farbpass</li>
-                                </ul>
-                            </td>
-                            <!--Info über Farb- und Stilberatung-->
-                            <td>
-                                ca. 4 Stunden
-                                <ul>
-                                    <li>Tagesmakeup</li>
-                                    <li>Frisurberatung</li>
-                                    <li>Beratungsmappe mit Farb- und Stilpass</li>
-                                </ul>
-                            </td>
-                            <!--Info über Farb- und Stilberatung +-->
-                            <td>
-                                ca. 8 Stunden (auf 2 Tage aufgeteilt)
-                                <ul>
-                                    <li>Tagesmakeup</li>
-                                    <li>Frisurberatung</li>
-                                    <li>Beratungsmappe mit Farb- und Stilpass</li>
-                                    <li>Kleiderschrankcheck</li>
-                                    <li>Shoppingbegleitung</li>
-                                </ul>
-                            </td>
-                            <!--Info über Make-up Coaching-->
-                            <td>
-                                ca. 1,5 Stunden
-                                <ul>
-                                    <li>kurze Farbberatung</li>
-                                    <li>Make-up inkl. einfache Schritt-für-Schritt Anleitung</li>
-                                    <li>Coachingmappe für Zuhause</li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <!--Kosten von Farbberatung-->
-                            <td>219,- €</td>
-                            <!--Kosten von Farb- und Stilberatung-->
-                            <td>439,- €</td>
-                            <!--Kosten von Farb- und Stilberatung-->
-                            <td>779,- €</td>
-                            <!--Kosten von Make-up Choaching-->
-                            <td>149,- €</td>
-                        </tr>
-
-                    </tbody>
-                </table>
-
-                <br>
-                <br>
-                <br>
-
-                <table>
-                    <caption>
-                       Brautpakete
-                        <figure>
-                            <img src="img/1000x200.png" alt="Farberatung" title="Farbberatung" width="1000" height="200">
-                            <!-- <figcaption>Farbberatung</figcaption> -->
-                        </figure>
-                    </caption>
-
-                    <tbody>
-                        <tr>
-                            <th>Basic</th>
-                            <th>Exclusive</th>
-                            <th>Deluxe</th>
-                        </tr>
-                        <!--Basic-->
-                        <tr>
-                            <!--Info über Basic-->
-                            <td>
-                                <ul>
-                                    <li>Online-Frisurberatung</li>
-                                    <li>Make-up und Haarstyling an deinem Wunschort</li>
-                                </ul>
-                            </td>
-                            <!--Info über Exclusive-->
-                            <td>
-                                <ul>
-                                    <li>kurze Farb- und Stilberatung</li>
-                                    <li>Frisurberatung</li>
-                                    <li>Probestyling</li>
-                                    <li>Make-up und Haarstyling an deinem Wunschort</li>
-                                </ul>
-                            </td>
-                            <!--Info über Deluxe-->
-                            <td>
-                                <ul>
-                                    <li>kurze Farb- und Stilberatung</li>
-                                    <li>Frisurberatung</li>
-                                    <li>Probestyling</li>
-                                    <li>Make-up und Haarstyling an deinem Wunschort (z.B. für standesamtliche Trauung)</li>
-                                    <li>Make-up und Haarstyling an einem weiteren Wunschort (z.B. kirchliche Trauung)</li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <!--Kosten von Farbberatung-->
-                            <td>199,- €</td>
-                            <!--Kosten von Farb- und Stilberatung-->
-                            <td>349,- €</td>
-                            <!--Kosten von Farb- und Stilberatung-->
-                            <td>499,- €</td>
-                        </tr>
-
-                    </tbody>
-                </table>
-
-                <p>
-                    <a href="#">zurück nach oben</a>
-                </p>
-            </article>        
         </main>
-
-        <footer>
-            <p>Copyright &copy; schönheit.pur</p>
-        </footer>
-        <hr>   
+    
+            <footer>
+                <p>Copyright &copy; schönheit.pur</p>
+            </footer>
+            <hr>   
+    
     </body>
 
 </html>
