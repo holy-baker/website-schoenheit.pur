@@ -1,174 +1,27 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Sebastian Lieg">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Offizielle Website von schönheit.pur | Farb- und Stilberatung in Wangen im Allgäu und Umgebung">
-    <meta name="keywords" content="Farbberatung, Stilberatung, Styling, Make-up, Kleiderschrank-Organisation, Personal-Shopping, Brautstyling, Eventstyling, Haarstyling, Wangen im Allgäu">
-    <title>schoenheit.pur | Farb- und Stilberatung</title>
-    <link rel="icon" href="blume.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <style>
-        html {
-            font-size: 22px;
-            box-sizing: border-box;
-        }
 
-        body {
-            min-height: 100vh;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1rem;
-            border-left: 1px solid #333;
-            border-right: 1px solid #333;
-            font-family: 'Exo 2', sans-serif;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Sebastian Lieg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="desctiption" content="offizielle website von schoenheit.pur | Farb- und Stilberatung in Wangen im Allgäu und Umgebung">
+        <meta name="keywords" content="Farbberatung, Stilberatung, Styling, Make-up, Kleiderschrank-Organisation, Personal-Shopping, Brautstyling, Eventstyling, Haarstyling, Wangen im Allgaeu">
+        <title>schoenheit.pur | Farb- und Stilberatung</title>
+        <!-- icon soll noch geändert werden -->
+        <link rel="icon" href ="blume.png" type="image/x-icon">
+            <!-- Die Schriftart muss vor veröffentlich aus rechtlichen Gründen runtergeladen werden-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Righteous&display=swap" rel="stylesheet">
 
-        .navbar {
-            width: 100%;
-            overflow: hidden;
-        }
+        <link rel="stylesheet" href="css/style.css" type="text/css">   
 
-        .navbar_ext {
-            width: 100%;
-            overflow: hidden;
-        }
-
-        .navbar ul {
-            list-style: none;
-            overflow: hidden;
-        }
-
-        .navbar_ext ul {
-            list-style: none;
-            overflow: hidden;
-        }
-
-        .navbar a {
-            float: right;
-            width: 13%;
-            margin: 0.2%;
-            text-align: center;
-            padding: 12px;
-            color: black;
-            background-color: white;
-            border-color: #333;
-            border-style: solid;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 18px;
-            display: block;
-            overflow: hidden;
-        }
-
-        .navbar_ext a {
-            float: left;
-            width: 10%;
-            margin: 0.2%;
-            text-align: center;
-            padding: 12px;
-            color: black;
-            background-color: white;
-            border-color: #333;
-            border-style: solid;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 18px;
-            display: block;
-            overflow: hidden;
-        }
-
-        .navbar .icon {
-            display: none;
-        }
-
-        .navbar a:hover {
-            background-color: #555;
-            color: white;
-        }
-
-        .parallax {
-            background-image: url("/img/background.png");
-            width: 100%;
-            height: auto;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .logo_sp {
-            margin: 0px;
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        th, td, caption {
-            border: 1px solid #333;
-            font-family: 'Courier New', Courier, monospace;
-            border-collapse: separate;
-            padding: 0.5rem;
-        }
-
-        @media (max-width: 970px) {
-            .parallax {
-                background-image: url("/img/background_small.png");
-            }
-        }
-
-
-/* von w3shools am 22.10.2023*/
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) */
-@media screen and (max-width: 970px) {
-    .navbar a.icon {
-      float: right;
-      display: block;
-    }
-    .navbar ul{
-      display: none
-    }
-
-    .navbar.responsive {
-      display: flex;
-      justify-content: center;
-    }
-
-    .navbar.responsive ul {
-      width: 400%;
-      display:block;
-      
-      list-style: none;
-    }
-
-    .navbar.responsive ul li{
-      margin-right: 20px;
-    }
-
-    .navbar.responsive ul li a{
-      text-decoration: none;
-    }
-
-    .navbar.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .navbar.responsive a {
-      float:none;
-      /* display: block; */
-      text-align: center;
-      list-style: none;
-    }
-  }
-    </style>
+    </head>
 
     <body>
+
+    
         <header>
             <div class="navbar" id="myNavbar">
                 <nav>
@@ -196,19 +49,29 @@
                 </script>
 
             <hr>
-
-            <div class="parallax">
-            
-
+            <!-- <script>
+                const elements = document.querySelectorAll('.parallax');
+                    
+                window.addEventListener('scroll', function () {
+                  let offset = window.pageYOffset;
+                
+                  elements.forEach((element) => {
+                    element.style.backgroundPositionY = `${offset * 0.8}px`;
+                  });
+                });       
+            </script> -->
+    
+            <div class="parallax" id="parallax-1">  
                 <article id="home">
                     <div class="logo_sp">
                         <center>
                             <figure>
-                                <img src="/img/Logo.png" class="logo_sp" title="schönheit-pur" width="810" height="810">
+                                <img src="img/Logo.png" alt="Logo" class="logo_sp" title="schönheit-pur" width="810" height="810">
                             </figure>
                         </center>
                     </div>
             </div>
+            
                 <h1> Willkommen bei schönheit.pur</h1>
                 <br>
                 <p>Wenn wir den Mut haben, unsere Einzigartigkeit zu umarmen, strahlen wir eine ganz besondere Schönheit aus.</p>
@@ -303,7 +166,7 @@
                     <caption>
                         Make-up & Farb- und Stilberatung
                         <figure>
-                            <img src="/img/1000x200.png" alt="Farberatung" title="Farbberatung" width="1000" height="200">
+                            <img src="img/1000x200.png" alt="Farberatung" title="Farbberatung" width="1000" height="200">
                             <!-- <figcaption>Farbberatung</figcaption> -->
                         </figure>
                     </caption>
@@ -378,7 +241,7 @@
                     <caption>
                        Brautpakete
                         <figure>
-                            <img src="/img/1000x200.png" alt="Farberatung" title="Farbberatung" width="1000" height="200">
+                            <img src="img/1000x200.png" alt="Farberatung" title="Farbberatung" width="1000" height="200">
                             <!-- <figcaption>Farbberatung</figcaption> -->
                         </figure>
                     </caption>
