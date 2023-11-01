@@ -88,6 +88,7 @@ body {
   justify-content: center;
   align-items: center;
   top: 0;
+  will-change: transform;
 
 }
 
