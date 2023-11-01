@@ -17,6 +17,7 @@ body {
   width: 100%;
   overflow: hidden;
   z-index: 100;
+  background-color: white;
 }
 .navbar_ext{
   width: 100%;
@@ -78,20 +79,30 @@ body {
 }
 
 .parallax{
-  width: 100%;
-  height:auto;
+  /* width: 100%; */
+  /* height:auto; */
   /* background-attachment: fixed; */
-  background-position: center;
+  /* background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-size: 100vh; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
 
   position: fixed;
-  top: 0;
+ justify-content: space-around;
+ 
+  height: auto;
+  /* top: 0; */
   z-index: -2;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  width: 800px;
+  margin: 0% auto;
+  left: 0;
+  right: 0;
 }
 
 /* #parallax-1{
@@ -103,6 +114,10 @@ body {
   display: flex;
   justify-content: center;
   height: auto;
+}
+
+.container{
+  background-color: white;
 }
 
 h1{
