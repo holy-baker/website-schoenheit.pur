@@ -6,11 +6,13 @@
         <meta name="author" content="Sebastian Lieg">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="desctiption" content="Kontakt aufnehmen mit schönheit.pur">
-        <meta name="keywords" content="Farbberatung, Stilberatung, Styling, Make-up, Kleiderschrank-Organisation, Personal-Shopping, Brautstyling, Eventstyling, Haarstyling, Wangen im Allgaeu">
-        <title>Kontakt aufnehmen</title>
+        <title>Kontakt | schoenheit.pur | Farb- und Stilberatung</title>
         <!-- icon soll noch geändert werden -->
         <link rel="icon" href ="blume.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/fonts.css">
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/main.js"></script>
+
         
     </head>
     <body>
@@ -18,59 +20,117 @@
             <div class="navbar_ext">
                 <nav>
                     <ul>
+                        <!-- Link muss noch geändert werden zu "/schoenheit-pur/"?-->
                         <li><a href="/website-schoenheit.pur/">zurück</a></li>
                     </ul>
                 </nav>
             </div>
-            <h1>Kontakt aufnehmen</h1>
-            <figure>
-                <img src="img/phone.jpg" alt="Telefon" title="Rufen Sie an" width="1280" height="853">
-                <figcaption>
-                    Kontaktaufnahme
-                </figcaption>
-            </figure>
+            <div class="body2">
+                <div class="container">
+                    <h1>Kontakt aufnehmen</h1>
+                </div>
+            </div>
+            <!-- <div class="image1">
+                <figure>
+                    <div class="image2">
+                        <img src="img/phone.jpg" alt="Telefon" title="Rufen Sie an" width="1280" height="853"> -->
+                        <!-- <figcaption>
+                            Kontaktaufnahme
+                        </figcaption> -->
+                    <!-- </div>    
+                </figure>
+            </div> -->
         </header>
-        <hr>
         <main>
-             <section>
-                 <h2>Kontaktformular</h2>
-            
-                 <form action="https://httpbin.org/get" method="get">
-                     <fieldset>
-                         <legend>nehmen Sie Kontakt auf</legend>
-                         <p>
-                             <label for="name">Name:</label>
-                             <input type="text" name="name" id="name" placeholder="dein Name" required>
-                         </p>
-                         <p>
-                             <label for="email">Email:</label>
-                             <input type="email" name="email" id="email" placeholder="deine email" required>
-                         </p>
-                         <p>
-                             <label for="message">deine Nachricht:</label>
-                             <br>
-                             <textarea name="message" id="message" cols="30" rows="10"
-                                 placeholder="schreibe hier deine Nachricht"></textarea>
-                         </p>
-                     </fieldset>
-                     <button type="submit">Senden</button>
-                     <button type="reset">Reset</button>
-                 </form>
-             </section>
-             <section>
-                 <h2>meine Anschrift</h2>
-                 <address>
-                    Bahnhofstraße 999<br>
-                     Wangen im Allgäu
-                     <br><br>
-                     Phone: <a href="tel:+5555555555">555-555-5555</a>
-                 </address>
-             </section>
+
+            <div class="body2">
+               <div id="parallax-1">  
+                  <div class="parallax-container-1">
+                     <div class="parallax">
+                        <img src="img/background_3375x3375.png" alt="Background" title="background" width="3375" height="3375">
+                     </div>
+                  </div>
+               </div>
+        
+                <div class="container">
+                    <h2>Kontaktformular</h2>
+                    
+                    <form  action="https://formsubmit.co/seppl1.1990@freenet.de" method="POST" id="ismForm"> <!--action="https://httpbin.org/get" -->
+                        <fieldset>
+                            <legend>persönliche Angaben</legend>
+                            <p>
+                                <label for="anrede">Anrede:*</label>
+                                <input type="text" name="Anrede" id="anrede" list="anrede-optionen" required>
+                                    <datalist id="anrede-optionen">
+                                        <option value="Frau">
+                                        <option value="Herr">
+                                    </datalist>
+                                </select>
+                            </p>
+
+                            <p>
+                                <label for="vorname">Vorname: *</label>
+                                <input type="text" name="Vorname" id="vorname" placeholder="dein Vorname" autocomplete="off" required>
+                            </p>
+
+                            <p>
+                                <label for="nachname">Nachname: *</label>
+                                <input type="text" name="Nachname" id="nachname" placeholder="dein Nachname" autocomplete="off" required>
+                            </p>
+
+                            <div style="display: none; visibility: hidden;">
+                                <input type="text" name="Jobtitel" id="jobtitel" placeholder="dein Jobtitel" autocomplete="off" >
+                            </div>
+
+                            <p>
+                                <label for="email">Email: *</label>
+                                <input type="email" name="e-mail" id="email" placeholder="deine e-mailadresse" autocomplete="off" required>
+                            </p>
+                            <p>
+                                <label for="message">deine Nachricht: *</label>
+                                <br>
+                                <textarea name="Nachricht" id="message" cols="30" rows="10"
+                                    placeholder="schreibe hier deine Nachricht"></textarea>
+                               <p></p>
+                               <input type="checkbox" name="checkbox_Datenschutzerklärung" id="checkbox" required>
+                               <label for="">Ich stimme der Datenverarbeitung <p>laut <a href="datenschutz.html">Datenschutzerklärung</a> zu. *</p></label>
+                            </p>
+
+                            <p>
+                                <input type="hidden" name="_next" value="https:http://127.0.0.1:5500/danke-für-deine-nachricht.html">
+                            </p>
+                        <!-- <button class="absenden" type="submit">Absenden</button>                         -->
+                        <button class="absenden" id="absenden" onclick="sendData()" disabled>Absenden</button>
+                        <!-- <input class="absenden" type="submit" id="absenden" disabled="disabled" /> -->
+                        <button class="absenden" type="reset">Reset</button>
+                    </fieldset>
+                    <p><strong>Hinweis:</strong> Felder mit * müssen ausgefüllt werden.</p>
+
+                    </form>
+                </div>
+                <div class="container">
+                    <h2>meine Anschrift</h2>
+                    <address>
+                       Bahnhofstraße 999<br>
+                        Wangen im Allgäu
+                        <br><br>
+                        Phone: <a href="tel:+5555555555">555-555-5555</a>
+                    </address>
+                </div>
+                <br>
+                <hr>
+            </div>
         </main>
         <footer>
-            <p>Copyright &copy; schönheit.pur</p>
-        </footer>
-        <hr>   
-    </body>
+            <div class="body2">
+               <p>Copyright &copy; schönheit.pur
+               &nbsp;I&nbsp;
+               <a href="impressum.html">Impressum</a>
+               &nbsp;I&nbsp;
+               <a href="datenschutz.html">Datenschutz</a></p>
+            </div>
+         </footer>
+
+       </body>
 
 </html>
