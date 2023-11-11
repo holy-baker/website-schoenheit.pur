@@ -7,23 +7,15 @@ function myFunction() {
   }
 }
 
-
-
-
+// damit parallax-effect auch auf smartphones richtig dargestellt wird:
 const parallax = document.getElementById("parallax-1");
-
 window.addEventListener('scroll', function () {
-    
     // let offset = this.window.pageYOffset;
     // elements.forEach((element) => {
     // let offset = (element.offsetTop - (window.pageYOffset)) * 0.8
     // element.style.backgroundPositionY = `${offset}px`;
     // });
-
-
-  
 });
-
 
 const requestUrl  = 'https://formsubmit.co/seppl1.1990@freenet.de'
  function sendData() {
@@ -51,42 +43,27 @@ const requestUrl  = 'https://formsubmit.co/seppl1.1990@freenet.de'
    xhr.send(formBody)
  }
 
-
 //  Senden-Button erst nach 10 Sekunden erlauben
-// window.onload=function() {
-//    setTimeout(function(){
-//      document.getElementById('absenden').disabled = null;
-//    },10000);
-//  }
+setTimeout (function(){
+  document.getElementById('absenden').disabled = null;
+  },10000);
 
-//  var countdownNum = 10;
-//  window.onload=function() {
-//    incTimer();
-//    function incTimer(){
-//      setTimeout (function(){
-//        if(countdownNum != 0){
-//          countdownNum--;
-//          document.getElementById('timeLeft').innerHTML = 'Time left: ' + countdownNum + ' seconds';
-//          incTimer();
-//        } else {
-//          document.getElementById('absenden').disabled = null;
-//          document.getElementById('timeLeft').innerHTML = 'Ready!';
-//        }
-//      },1000);
-//    }
-//  }
+  var countdownNum = 10;
+  incTimer();
 
+  function incTimer(){
+  setTimeout (function(){
+      if(countdownNum != 0){
+      countdownNum--;
+      // document.getElementById('timeLeft').innerHTML = 'Time left: ' + countdownNum + ' seconds';
+      document.getElementById('absenden').innerHTML = countdownNum ;
 
-// window.onload=function() {
-//   var button = document.getElementById("absenden");
-//   button.addEventListener("click",submit);
-//   button.addEventListener("click",disableS);
+      incTimer();
+      } else {
+      // document.getElementById('timeLeft').innerHTML = 'Ready!';
+      document.getElementById('absenden').innerHTML = 'Absenden';
 
-//   function disableS(){
-//     button.disabled = true;
-//     setTimeout(function(){ button.disabled = false; }, 3000);
-//   }
+      }
+  },1000);
+  }
 
-//   function submit(){
-//   }
-// }
