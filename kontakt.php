@@ -1,3 +1,19 @@
+<?php 
+if(isset($_POST['submit'])){
+    $to = "seppl1.1990@freenet.de"; // this is your Email address
+    $from = $_POST['e-mail']; // this is the sender's Email address
+    $name = $_POST['Name'];
+    $message = $name . " " . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="de">
     
@@ -8,10 +24,10 @@
         <meta name="desctiption" content="Kontakt aufnehmen mit schönheit.pur">
         <title>Kontakt | schoenheit.pur | Farb- und Stilberatung</title>
         <!-- icon soll noch geändert werden -->
-        <link rel="icon" href ="blume.png" type="image/x-icon">
+        <link rel="icon" href ="img/blume.png" type="image/x-icon">
         <link rel="stylesheet" href="css/fonts.css">
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/main.js"></script>
+        <script defer src="js/main.js"></script>
 
         
     </head>
@@ -56,7 +72,7 @@
                 <div class="container">
                     <h2>Kontaktformular</h2>
                     
-                    <form  action="https://formsubmit.co/seppl1.1990@freenet.de" method="POST" id="ismForm"> <!--action="https://httpbin.org/get" -->
+                    <form method="POST" action="webform.php" id="ismForm"> <!--method="POST"  action="https://httpbin.org/get" action="https://formsubmit.co/seppl1.1990@freenet.de"-->
                         <fieldset>
                             <legend>persönliche Angaben</legend>
                             <p>
@@ -72,10 +88,10 @@
                             <div style="display: none; visibility: hidden;">
                                 <div class="row">
                                     <div class="col-25">
-                                        <label for="jobtitel"></label>
+                                        <label for="jobtitle"></label>
                                     </div>
                                     <div class="col-75">
-                                        <input type="text" name="Jobtitel" id="jobtitel" placeholder="dein Jobtitel" autocomplete="off" >
+                                        <input type="text" name="Jobtitel" id="jobtitle" placeholder="dein Jobtitel" autocomplete="off" >
                                     </div>
                                 </div>
                             </div>
@@ -92,10 +108,10 @@
                             <p>
                                 <div class="row">
                                     <div class="col-25">
-                                        <label for="telefonnummer">Telefonnummer:</label>
+                                        <label for="phonenumber">Telefonnummer:</label>
                                     </div>
                                     <div class="col-75">
-                                    <input type="text" name="Telefonnummer" id="telefonnummer" placeholder="deine Telefonummer" autocomplete="off">
+                                    <input type="text" name="Telefonnummer" id="phonenumber" placeholder="deine Telefonummer" autocomplete="off">
                                     </div>
                                 </div>
                             </p>
@@ -116,10 +132,12 @@
                             <p>Weitere Informationen findest du in unserer <a href="datenschutz.html">Datenschutzerklärung.</p>
 
                             <p>
-                                <input type="hidden" name="_next" value="https:http://127.0.0.1:5500/danke-für-deine-nachricht.html">
+                                <!-- <input type="hidden" name="_next" value="https:http://127.0.0.1:5500/danke-für-deine-nachricht.html"> -->
                             </p>
-                        <!-- <button class="absenden" type="submit">Absenden</button>                         -->
-                        <button class="absenden" id="absenden" onclick="sendData()" disabled>10 Sekunden</button>
+                        <!-- <button class="absenden" type="submit">Absenden</button> 
+                                               -->
+                        <button id="absenden" class="absenden" disabled></button> <!--onclick="sendData()"-->
+                        
                         <!-- <p id="timeLeft">Time Left: 10 seconds</p> -->
                         <!-- <input class="absenden" type="submit" id="absenden" disabled="disabled" /> -->
                         <!-- <button class="absenden" type="reset">Reset</button> -->

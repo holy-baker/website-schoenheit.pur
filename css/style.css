@@ -45,11 +45,11 @@ body {
  width: 13%;
  margin: 0.2%;
  text-align: center;
- padding: 12px;
+ padding: 6px;
  color: black;
  background-color: white;
- border-color: #333;
  border-style: solid;
+ border-width: 2px;
  border-radius:5px;
  text-decoration: none;
  font-size: 18px;
@@ -60,13 +60,14 @@ body {
 .navbar_ext a{
   float: left;
   width: 13%;
+  min-width: 60px;
   margin: 0.2%;
   text-align: center;
-  padding: 12px;
+  padding: 6px;
   color: black;
   background-color: white;
-  border-color: #333;
   border-style: solid;
+  border-width: 2px;;
   border-radius: 5px;
   text-decoration: none;
   font-size: 18px;
@@ -136,7 +137,7 @@ body {
 }
 
 .container{
-  background-color:rgba(255, 255, 255, 0.5);
+  background-color:rgba(255, 255, 255, 0.9);
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 5px;
@@ -176,6 +177,20 @@ textarea{
   padding: 12px 12px 12px 0;
   display: inline-block;
 } */
+
+
+.col-25{
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
 
 h1{
 text-align: center;
@@ -232,6 +247,7 @@ th, td, caption {
 #slides {
   padding: 10px;
   border: 3px solid #ccc;
+  border-radius: 10px;
   background: #fff;
   position: relative;
   z-index: 1;
@@ -240,6 +256,7 @@ th, td, caption {
 #slides2 {
   padding: 10px;
   border: 3px solid #ccc;
+  border-radius: 10px;
   background: #fff;
   position: relative;
   z-index: 1;
@@ -306,6 +323,7 @@ th, td, caption {
   align-items: center;
   height: 100%;
   color: whitesmoke;
+  border-radius: 5px;
 }
 
 #slides2 .slide {
@@ -316,6 +334,7 @@ th, td, caption {
   align-items: center;
   height: 100%;
   color: whitesmoke;
+  border-radius: 5px;
 }
 
 #slides .slide_1 {
@@ -373,7 +392,8 @@ th, td, caption {
   display: none;
   width: 50px;
   height: 50px;
-  opacity: .4;
+  opacity: 0.4;
+
 }
 
 #controls2 label {
@@ -381,7 +401,7 @@ th, td, caption {
   display: none;
   width: 50px;
   height: 50px;
-  opacity: .4;
+  opacity: 0.4;
 }
 
 
@@ -393,7 +413,6 @@ th, td, caption {
   opacity: 1;
 }
 
-
 #slide1:checked ~ #controls label:nth-child(2),
 #slide2:checked ~ #controls label:nth-child(3),
 #slide3:checked ~ #controls label:nth-child(4),
@@ -401,30 +420,32 @@ th, td, caption {
   float:right;
   margin: 0 -50px 0 0;
   display: block;
+
 }
 /* ergänzt für zweiten slider */
 #slide2_1:checked ~ #controls2 label:nth-child(2),
 #slide2_2:checked ~ #controls2 label:nth-child(3),
-#slide2_3:checked ~ #controls2 label:nth-child(4),
-#slide2_4:checked ~ #controls2 label:nth-child(1) {
+#slide2_3:checked ~ #controls2 label:nth-child(1) {
+/* #slide2_4:checked ~ #controls2 label:nth-child(1) { */
   float:right;
   margin: 0 -50px 0 0;
   display: block;
 }
 /* ENDE: ergänzt für zweiten slider */
-#slide1:checked ~ #controls label:nth-last-child(2),
-#slide2:checked ~ #controls label:nth-last-child(3),
-#slide3:checked ~ #controls label:nth-last-child(4),
-#slide4:checked ~ #controls label:nth-last-child(1) {
+#slide1:checked ~ #controls label:nth-last-child(1),
+#slide2:checked ~ #controls label:nth-last-child(4),
+#slide3:checked ~ #controls label:nth-last-child(3),
+#slide4:checked ~ #controls label:nth-last-child(2) {
   float:left;
   margin: 0 0 0 -50px;
   display: block;
+
 }
 /* ergänzt für zweiten slider */
-#slide2_1:checked ~ #controls2 label:nth-last-child(2),
+#slide2_1:checked ~ #controls2 label:nth-last-child(1),
 #slide2_2:checked ~ #controls2 label:nth-last-child(3),
-#slide2_3:checked ~ #controls2 label:nth-last-child(4),
-#slide2_4:checked ~ #controls2 label:nth-last-child(1) {
+#slide2_3:checked ~ #controls2 label:nth-last-child(2) {
+/* #slide2_4:checked ~ #controls2 label:nth-last-child(1) { */
   float:left;
   margin: 0 0 0 -50px;
   display: block;
@@ -469,8 +490,8 @@ th, td, caption {
 /* ergänzt für zweiten slider */
 #slide2_1:checked ~ #bullets2 label:nth-child(1),
 #slide2_2:checked ~ #bullets2 label:nth-child(2),
-#slide2_3:checked ~ #bullets2 label:nth-child(3),
-#slide2_4:checked ~ #bullets2 label:nth-child(4) {
+#slide2_3:checked ~ #bullets2 label:nth-child(3){
+/* #slide2_4:checked ~ #bullets2 label:nth-child(4) { */
   background: #444;
 }
 /* ENDE: ergänzt für zweiten slider */
@@ -549,7 +570,7 @@ th, td, caption {
   }
 
   .navbar.responsive nav ul {
-    width: 380%;
+    width: 405%;
     display:block;
     list-style: none;
   }
