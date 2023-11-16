@@ -33,7 +33,7 @@ setTimeout (function(){
     document.getElementById('absenden').innerHTML = countdownNum ;
     incTimer();
   } else {
-    document.getElementById('absenden').innerHTML = 'Absenden';
+      document.getElementById('absenden').innerHTML = 'Absenden';
   }
 },1000);
 }
