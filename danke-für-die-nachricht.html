@@ -20,11 +20,17 @@
             <div id="parallax-1">  
                 <div class="parallax-container-1">
                    <div class="parallax">
-                      <img src="img/background_3375x3375.png" alt="Background" title="background" width="3375" height="3375">
+                      <picture>
+                         <source media="(min-width: 1240px)"  srcset="img/background_2400x2400.png" alt="background" title="background">
+                         <source media="(min-width: 970px)"  srcset="img/background_1800x1800.png" alt="background" title="background">
+                         <source media="(max-width: 969px)"  srcset="img/background_1200x1200.png" alt="background" title="background">                           
+                         
+                         <img src="img/background_2400x2400.png" alt="background" title="background" width="auto" height="auto">
+                      </picture>
                    </div>
                 </div>
             </div>
-
+    
             <div class="navbar_ext">
                 <nav>
                     <ul>
