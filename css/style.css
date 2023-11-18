@@ -12,6 +12,11 @@ body {
   font-family: 'Exo 2', sans-serif;
 }
 
+.text p{
+  display: inline;
+  margin: 0px;
+}
+
 .body2{
   padding: 1rem;
   text-align: center;
@@ -183,13 +188,13 @@ textarea{
 
 .col-25{
   float: left;
-  width: 25%;
+  width: 35%;
   margin-top: 6px;
 }
 
 .col-75 {
   float: left;
-  width: 75%;
+  width: 65%;
   margin-top: 6px;
 }
 
@@ -652,27 +657,7 @@ th, td, caption {
 }
 
 @media screen and (max-width: 970px) {
-  #slide1:checked ~ #controls label:nth-child(2),
-  #slide2:checked ~ #controls label:nth-child(3),
-  #slide3:checked ~ #controls label:nth-child(4),
-  #slide4:checked ~ #controls label:nth-child(1),
-  #slide1:checked ~ #controls label:nth-last-child(2),
-  #slide2:checked ~ #controls label:nth-last-child(3),
-  #slide3:checked ~ #controls label:nth-last-child(4),
-  #slide4:checked ~ #controls label:nth-last-child(1)
-/* ergänzt für zweiten slider */
-  #slide2_1:checked ~ #controls2 label:nth-child(2),
-  #slide2_2:checked ~ #controls2 label:nth-child(3),
-  #slide2_3:checked ~ #controls2 label:nth-child(4),
-  #slide2_4:checked ~ #controls2 label:nth-child(1),
-  #slide2_1:checked ~ #controls2 label:nth-last-child(2),
-  #slide2_2:checked ~ #controls2 label:nth-last-child(3),
-  #slide2_3:checked ~ #controls2 label:nth-last-child(4),
-  #slide2_4:checked ~ #controls2 label:nth-last-child(1)
-/* ENDE: ergänzt für zweiten slider */
-  {
-     margin: 0;
-  }
+
   #slides {
      max-width: calc(100% - 40px);
      margin: 0 auto;
@@ -684,11 +669,9 @@ th, td, caption {
     margin: 0 auto;
     font-size: medium;
  }
-
-
 }
 
-/* ENDE 29.10.2023 */
+
 @media screen and (max-width: 970px) {
   .navbar{
     display: flex;
