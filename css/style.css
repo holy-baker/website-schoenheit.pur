@@ -13,7 +13,7 @@ body {
 }
 
 .text p{
-  display: inline;
+  /* display: inline; */
   margin: 0px;
 }
 
@@ -120,7 +120,7 @@ body {
 
 .logo_sp{
   /* position: flex; */
-  padding-right: 20px;
+  padding-right: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,7 +143,12 @@ body {
 
 }
 
+
 .container{
+  max-width: 1010px;
+  margin-left: auto;
+  margin-right: auto;
+  
   background-color:rgba(255, 255, 255, 0.9);
   padding-left: 20px;
   padding-right: 20px;
@@ -704,7 +709,7 @@ th, td, caption {
 
   .navbar.responsive nav ul li a{
     text-decoration: none;
-    margin-right: 60px;
+    margin-right: 100px;
     float: none;
   }
 
@@ -722,4 +727,8 @@ th, td, caption {
 
   }
 
+  .text p{
+    display: inline;
+    margin: 0px;
+  }
 }
