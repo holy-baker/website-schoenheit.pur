@@ -17,7 +17,6 @@
     </head>
     <body>
         <header>             
-    
             <div id="navbar" class="navbar_ext">
                 <nav>
                     <ul>
@@ -26,34 +25,17 @@
                     </ul>
                 </nav>
             </div>
-
         </header>
         <hr>
         <main>
             <div class="body2">
-            
-                <p>Noch keine Bilder vorhanden</p>
-                <!-- Inhalt -->
-                            <!-- <figure>
-                    <img src="img/bride.jpg" alt="Brautstyling" title="Braut" width="1280" height="853">
-                    <figcaption>
-                        Brautstyling
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="img/Eventstyling.jpg" alt="Eventstyling" title="Event" width="853" height="1280">
-                    <figcaption>
-                        Eventstyling
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="img/Farbberatung.jpg" alt="Farbberatung" title="Beratung" width="960" height="638">
-                    <figcaption>
-                        Farbberatung
-                    </figcaption>
-                </figure> -->
+                <!-- Image containers with click functionality -->
+                <a href="#img1"><img src="img/Portfolio/20240426-1.svg" alt="Image" title="schönheit.pur" width="600" height="600"></a>
+                <a href="#img2"><img src="img/Portfolio/20240426-2.svg" alt="Image" title="schönheit.pur" width="600" height="600"></a>
                 <br>
-                <hr>    
+                <a href="#img3"><img src="img/Portfolio/20240426-3.svg" alt="Image" title="schönheit.pur" width="1200" height="600"></a>
+                <br>
+                <a href="#img4"><img src="img/Portfolio/20240426-4.svg" alt="Image" title="schönheit.pur" width="600" height="600"></a>
            </div>
         </main>
         <footer>
@@ -64,8 +46,27 @@
                &nbsp;I&nbsp;
                <a href="datenschutz.html">Datenschutz</a></p>
             </div>
-         </footer>
-  
+        </footer>
+        <!-- Fullscreen overlay -->
+        <div class="overlay" id="img1">
+            <a href="#" class="nav-btn left"></a>
+            <img src="img/Portfolio/20240426-1.svg" alt="Fullscreen Image">
+            <a href="#img2" class="nav-btn right"></a>
+        </div>
+        <div class="overlay" id="img2">
+            <a href="#img1" class="nav-btn left"></a>
+            <img src="img/Portfolio/20240426-2.svg" alt="Fullscreen Image">
+            <a href="#img3" class="nav-btn right"></a>
+        </div>
+        <div class="overlay" id="img3">
+            <a href="#img2" class="nav-btn left"></a>
+            <img src="img/Portfolio/20240426-3.svg" alt="Fullscreen Image">
+            <a href="#" class="nav-btn right"></a>
+        </div>
+        <div class="overlay" id="img4">
+            <a href="#img2" class="nav-btn left"></a>
+            <img src="img/Portfolio/20240426-4.svg" alt="Fullscreen Image">
+            <a href="#" class="nav-btn right"></a>
+        </div>
     </body>
-
 </html>
