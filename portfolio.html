@@ -7,13 +7,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Portfolio von schönheit.pur">
         <title>Portfolio | schoenheit.pur | Farb- und Stilberatung</title>
-        <!-- icon soll noch geändert werden -->
         <link rel="icon" href ="img/Logo_klein.png" type="image/x-icon">
         <link rel="stylesheet" href="css/fonts.css">
         <link rel="stylesheet" href="css/style.css">
         <script src="js/main.js"></script>
-
-        
     </head>
     <body>
         <header>             
@@ -30,12 +27,12 @@
         <main>
             <div class="body2">
                 <!-- Image containers with click functionality -->
-                <a href="#img1"><img src="img/Portfolio/20240426-1.svg" alt="Image" title="schönheit.pur" height="150vh"></a>
-                <a href="#img2"><img src="img/Portfolio/20240426-2.svg" alt="Image" title="schönheit.pur" height="150vh"></a>
+                <a href="#img1"><img src="img/Portfolio/20240426-1.svg" alt="Image" title="schönheit.pur" height="500vh"></a>
+                <a href="#img2"><img src="img/Portfolio/20240426-2.svg" alt="Image" title="schönheit.pur" height="500vh"></a>
                 <br>
-                <a href="#img3"><img src="img/Portfolio/20240426-3.svg" alt="Image" title="schönheit.pur" height="150vh"></a>
+                <a href="#img3"><img src="img/Portfolio/20240426-3.svg" alt="Image" title="schönheit.pur" height="500vh"></a>
                 <br>
-                <a href="#img4"><img src="img/Portfolio/20240426-4.svg" alt="Image" title="schönheit.pur" height="150vh"></a>
+                <a href="#img4"><img src="img/Portfolio/20240426-4.svg" alt="Image" title="schönheit.pur" height="500vh"></a>
            </div>
         </main>
         <footer>
@@ -49,24 +46,29 @@
         </footer>
         <!-- Fullscreen overlay -->
         <div class="overlay" id="img1">
-            <a href="#" class="nav-btn left"></a>
+            <a href="#img4" class="nav-btn left"></a>
             <img src="img/Portfolio/20240426-1.svg" alt="Fullscreen Image">
             <a href="#img2" class="nav-btn right"></a>
+            <a href="#" class="close-btn">&times;</a>
         </div>
         <div class="overlay" id="img2">
             <a href="#img1" class="nav-btn left"></a>
             <img src="img/Portfolio/20240426-2.svg" alt="Fullscreen Image">
             <a href="#img3" class="nav-btn right"></a>
+            <a href="#" class="close-btn">&times;</a>
         </div>
         <div class="overlay" id="img3">
             <a href="#img2" class="nav-btn left"></a>
             <img src="img/Portfolio/20240426-3.svg" alt="Fullscreen Image">
-            <a href="#" class="nav-btn right"></a>
+            <a href="#img4" class="nav-btn right"></a>
+            <a href="#" class="close-btn">&times;</a>
         </div>
+        <!-- <input type="checkbox" id="toggle" style="display: none;"> -->
         <div class="overlay" id="img4">
-            <a href="#img2" class="nav-btn left"></a>
+            <a href="#img4" class="nav-btn left"></a>
             <img src="img/Portfolio/20240426-4.svg" alt="Fullscreen Image">
-            <a href="#" class="nav-btn right"></a>
-        </div>
+            <a href="#img1" class="nav-btn right"></a>
+            <a href="#" class="close-btn">&times;</a>
+        </div>  
     </body>
 </html>
